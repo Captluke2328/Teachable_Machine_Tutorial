@@ -1,0 +1,2 @@
+0 Without Facemask
+1 With Facemask
