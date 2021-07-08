@@ -7,7 +7,7 @@ function modelReady(){
 // --- This one go first ---
 function preload() {
   MobileNet = ml5.imageClassifier('MobileNet', modelReady);
-  imgs = loadImage('static/dog.jpeg');  
+  imgs = loadImage('static/cat.png');  
 }
 
 function setup() {
@@ -19,7 +19,8 @@ function setup() {
 function gotResult(error, results) {
   // Display error in the console
   if (error) {
-    console.error(error);
+    console.log(error);
+    
   } else {
     // The results are in an array ordered by confidence.
     console.log(results);
@@ -27,5 +28,8 @@ function gotResult(error, results) {
     createDiv(`Confidence: ${nf(results[0].confidence, 0, 2)}`);
     textSize(25)
     text(results[0].label,10,height-50)
+    document.getElementById('label').innerHTML = results[0].label
+    document.getElementById('result').value = results[0].label
+    document.getElementById('myForm').submit();
   }
 }
