@@ -28,8 +28,8 @@ function gotResult(error, results) {
     createDiv(`Confidence: ${nf(results[0].confidence, 0, 2)}`);
     textSize(25)
     text(results[0].label,10,height-50)
-    document.getElementById('label').innerHTML = results[0].label
-    document.getElementById('result').value = results[0].label
-    document.getElementById('myForm').submit();
+    document.getElementById('label').innerHTML = results[0].label // -> Set the label in html to label value by using its ID
+    document.getElementById('result').value = results[0].label // -> Set the result for python input value by using result ID
+    document.getElementById('myForm').submit(); // -> Automatic submit the button
   }
 }
