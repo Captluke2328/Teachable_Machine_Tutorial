@@ -80,7 +80,8 @@ class FaceMaskClassifier():
 
 def main():
     cap = cv2.VideoCapture(0)
-    detector = FaceMaskClassifier(r'C:\Users\Lukas\Desktop\My Projects\Teachable_Machine\with_out_facemask_model\keras_model.h5', r'C:\Users\Lukas\Desktop\My Projects\Teachable_Machine\with_out_facemask_model\labels.txt')
+    #detector = FaceMaskClassifier(r'C:\Users\Lukas\Desktop\My Projects\Teachable_Machine\with_out_facemask_model\keras_model.h5', r'C:\Users\Lukas\Desktop\My Projects\Teachable_Machine\with_out_facemask_model\labels.txt')
+    detector = FaceMaskClassifier(r'/Users/jlukas/Desktop/My_Project/Teachable_Machine_Tutorial/Image_Classifier/with_out_facemask_model/keras_model.h5', r'/Users/jlukas/Desktop/My_Project/Teachable_Machine_Tutorial/Image_Classifier/with_out_facemask_model/labels.txt')
 
     while True:
         success, img = cap.read()

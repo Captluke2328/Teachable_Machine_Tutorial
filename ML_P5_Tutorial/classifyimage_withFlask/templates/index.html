@@ -3,11 +3,11 @@
         <meta charset="UTF-8">
             <title>Image classification using MobileNet and p5.js</title>
 
-            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
-                          <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+            <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
 
-            <script src="{{ url_for('static', filename='p5.min.js') }}"></script>
-            <script src="{{ url_for('static', filename='ml5.min.js') }}"></script>
+            <!-- <script src="{{ url_for('static', filename='p5.min.js') }}"></script>
+            <script src="{{ url_for('static', filename='ml5.min.js') }}"></script> -->
 
         </head>
 
@@ -15,8 +15,7 @@
             <!-- <form method="POST" action="/send_data" id="myForm">  -->
             <form method="POST"  id="myForm">
                 <div class="form-group">
-                    <h1>Result :<span id="label" name="lname"></span>
-                    </h1>
+                    <h1>Result :<span id="label" name="lname"></span></h1>
                     <input type="text" id="result" name="object" hidden="hidden"></div>
                     <input class="btn btn-primary" type="submit" id="submitnow" value="Pay Now" hidden="hidden"></form>
                     <h1>Image classification using MobileNet and p5.js</h1>
